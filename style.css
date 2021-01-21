@@ -1,6 +1,6 @@
 html,body,div,span,h1,h2{padding: 0;border: 0;margin: 0;background: transparent;font-size: 100%;font-weight: inherit;vertical-align: baseline;}
 .clearfix:after { content: "\00A0"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}html[xmlns] .clearfix { display: block;}* html .clearfix{ height: 1%;}
-html{height:100%;background:radial-gradient(ellipse at bottom, #e82219 10%, #33201a 100%);text-align:center;}
+html{height:100%;background:radial-gradient(ellipse at bottom, #FFB4B5 10%,#FFC0A5 100%);text-align:center;}
 body{font-size:1.6em;background:transparent;color:#ffffff;font-family: 'Dancing Script',Helvetica,Arial,sans-serif;}
 #topbar{background-color:#000;padding:5px 0;}
 #main{max-width:1100px;margin:auto;margin-top:5%;}
