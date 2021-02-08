@@ -1,5 +1,6 @@
 var countdown = new Date("feb 12, 2021 0:0:0 ").getTime();
-
+var iframe = document.querySelector("#preview-frame");
+var main = document.querySelector(".clearfix");
 var x = setInterval(function(){
   
   var now = new Date().getTime();
@@ -21,6 +22,8 @@ var x = setInterval(function(){
   if(countdown <0){
     countdown.clearInterval();
    document.querySelector("#tet").innerHTML = "Happy new year 2021";
+   iframe.style.display = "block";
+  main.style.display = "none";
   }
 },1000);
 //lập trình bởi Đinh Sĩ Duyệt 
