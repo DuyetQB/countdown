@@ -1,10 +1,12 @@
 var countdown = new Date("feb 12, 2021 0:0:0 ").getTime();
 var iframe = document.querySelector("#preview-frame");
-var main = document.querySelector(".clearfix");
-let oldAudio = document.querySelector("#stAudio")
-let newYearAudio = document.querySelector("#newAudio")
+var main = document.querySelector("#main");
+var oldAudio = document.querySelector("#stAudio")
+var newYearAudio = document.querySelector("#newAudio")
+
 var x = setInterval(function(){
-  
+ 
+
   var now = new Date().getTime();
   var distance = countdown- now ;
   
@@ -21,15 +23,18 @@ var x = setInterval(function(){
   document.querySelector("#mins").innerHTML = minutes
   document.querySelector("#secs").innerHTML = seconds;
   
-  if(x <=0){
-    x.clearInterval();
+  if(distance <= 0){
+    clearInterval(x);
    document.querySelector("#tet").innerHTML = "Happy new year 2021";
    iframe.style.display = "block";
   main.style.display = "none";
   oldAudio.pause();
   newYearAudio.play();
-  newYearAudio.muted = true
+  newYearAudio.loop = true
   }
 },1000);
 //lập trình bởi Đinh Sĩ Duyệt 
 //Hóa Sơn 
+
+
+ 
